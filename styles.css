@@ -1,0 +1,58 @@
+
+
+/**
+ * CATEGORIES
+ */
+
+#catListContainer {
+  float: right;
+  margin-right: 24px;
+  width: 24%;
+ 
+}
+#catListContainer ul {
+  
+  border: 2px solid red;
+  padding: 18px;
+}
+
+#catListContainer ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+ #delBtn {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+/**
+ * TILES
+ */
+
+ .tileCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 104px  ;
+  border: 1px solid;
+  padding: 48px;
+  /* margin: 100px; */
+  justify-content: center;
+  align-items: center;
+  padding-top: unset;
+  background-color: ghostwhite;
+  margin-right: 24px;
+}
+
+.tile-img {
+  max-width: 201px;
+}
+
+#tilesContainer {
+  display: flex;
+}
+
+
