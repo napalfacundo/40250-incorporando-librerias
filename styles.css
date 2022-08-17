@@ -8,8 +8,8 @@
   float: right;
   margin-right: 24px;
   width: 24%;
- 
 }
+
 #catListContainer ul {
   border: 1px solid lightgray;
   border-radius: 4px;
@@ -21,12 +21,8 @@
   justify-content: space-between;
 }
 
- #delBtn {
-  border: 2px solid black;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  margin-left: 8px;
+#delBtn {
+cursor: pointer;
 }
 
 /**
@@ -36,7 +32,7 @@
  .tileCard {
   display: flex;
   flex-direction: column;
-  max-width: 104px  ;
+  min-width: 104px  ;
   border: 1px solid;
   padding: 48px;
   /* margin: 100px; */
@@ -55,4 +51,11 @@
   display: flex;
 }
 
+dialog {
+  border: unset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
 
+dialog::backdrop {
+  backdrop-filter: blur(2px);
+}

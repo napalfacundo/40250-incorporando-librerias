@@ -5,6 +5,10 @@
  * Go further on tiles CRUD
  * Improve categories view
  * 
+ * 08/16 
+ * Migrate delete cat method to delBtn category trash button
+ * validate duplitcated inputs on create modes (tiles and categories)
+ * Create an interesting designed element when on hover shows Tile props // https://atomiks.github.io/tippyjs/v6/html-content/
  */
 
 /**
@@ -134,7 +138,7 @@ createCatBtn.addEventListener("click", () => {
         let createCatInput = document.getElementById("createCatInput").value;
         catList.push(createCatInput);
         localStorage.setItem('Categories', JSON.stringify(catList))
-        catListContainerList.innerHTML += `<li>${createCatInput}<i class="glyphicon glyphicon-trash"></i></li><hr>`;
+        catListContainerList.innerHTML += `<li>${createCatInput}<i class="glyphicon glyphicon-trash" id="delBtn"></i></li><hr>`;
         createCatDialog.close();
         root.removeChild(createCatDialog);
     });
