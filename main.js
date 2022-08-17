@@ -134,7 +134,7 @@ createCatBtn.addEventListener("click", () => {
         let createCatInput = document.getElementById("createCatInput").value;
         catList.push(createCatInput);
         localStorage.setItem('Categories', JSON.stringify(catList))
-        catListContainerList.innerHTML += `<li>${createCatInput}<i class="glyphicon glyphicon-cloud"></i></li>`;
+        catListContainerList.innerHTML += `<li>${createCatInput}<i class="glyphicon glyphicon-trash"></i></li><hr>`;
         createCatDialog.close();
         root.removeChild(createCatDialog);
     });
